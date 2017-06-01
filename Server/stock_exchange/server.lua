@@ -31,9 +31,10 @@ end
 -- EN -- THIS IS AN EXAMPLE OF USING FUNCTIONS
 AddEventHandler("inventory:sell", function(id) -- Why not quantity ? Depending on your inventory system
     TriggerEvent('es:getPlayerFromId', source, function(user)
-        local price = whereIsPriceR(id,nil) -- id = ID resource, You can pass your sync request to async with the callback
-        -- MULTIPLE REQUEST : Inventory management, deletion of the item, update of the quantity, etc ...  Depending on your inventory system AGAAAIN
-        user:addMoney(tonumber(price))
-        addSell(id)
+        whereIsPriceR(id, function (price) -- id = ID resource, You can pass your sync request to async with the callback
+            -- MULTIPLE REQUEST : Inventory management, deletion of the item, update of the quantity, etc ...  Depending on your inventory system AGAAAIN
+            user:addMoney(tonumber(price))
+            addSell(id)
+        end) 
     end)
 end)
