@@ -10,5 +10,5 @@ For this resource, it is necessary to have a minimum knowledge of the scripts th
 
  **Required**
 
-- [MYSQL Async](https://github.com/brouznouf/fivem-mysql-async)
+- Optionnal but recommended for requests : [MYSQL Async](https://github.com/brouznouf/fivem-mysql-async)
 - An inventory system, especially for resource sales
