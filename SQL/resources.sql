@@ -44,7 +44,7 @@ INSERT INTO `resources` (`resources_id`, `resources_name`, `resources_weight`, `
 (15, 'Bois précieux', 1, 2, 'Légale transformée', 0),
 (16, 'Saumon', 1, 0, 'Légale', 0),
 (17, 'Sushi', 1, 2, 'Légale transformée', 0),
-(18, 'Thon rouge', 1, 0, 'Légale', 0),
+(18, 'Thon rouge', 1, 0, 'Légale', 0);
 
 --
 -- Index pour les tables exportées
